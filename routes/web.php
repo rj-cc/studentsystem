@@ -69,3 +69,7 @@ Route::post('/login/process', [UserController::class, 'process']);
 Route::get('/register', [UserController::class, 'register']);
 Route::post('/store', [UserController::class, 'store']);
 Route::post('/logout', [UserController::class, 'logout']);
+
+Route::get('/ph-address', function() {
+    return view('address');
+});
